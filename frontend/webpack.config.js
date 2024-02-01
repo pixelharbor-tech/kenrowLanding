@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development', // or 'production'
     module: {
         rules: [
             {
@@ -30,10 +31,6 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
-            {
-                 mode: 'development'
-            }
-            
         ],
     },
     resolve: {
