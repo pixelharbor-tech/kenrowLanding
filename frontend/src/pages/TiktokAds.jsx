@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TiktokAds = () => {
+const SocialMediaAds = () => {
     return (
         <div>
-            Tiktok Ads
+            Social Ads
         </div>
     );
 }
 
-export default TiktokAds;
+export default SocialMediaAds;
