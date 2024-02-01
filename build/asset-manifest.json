@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71522db0.css",
+    "main.js": "/static/js/main.5ae22d37.js",
+    "static/js/651.d6bf3f43.chunk.js": "/static/js/651.d6bf3f43.chunk.js",
+    "static/media/kenrow png 1_1.png": "/static/media/kenrow png 1_1.f6c4d6dc6d3023788b25.png",
+    "index.html": "/index.html",
+    "main.71522db0.css.map": "/static/css/main.71522db0.css.map",
+    "main.5ae22d37.js.map": "/static/js/main.5ae22d37.js.map",
+    "651.d6bf3f43.chunk.js.map": "/static/js/651.d6bf3f43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71522db0.css",
+    "static/js/main.5ae22d37.js"
+  ]
+}
