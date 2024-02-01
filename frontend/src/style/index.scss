@@ -233,6 +233,12 @@ footer {
   }
 }
 
+.container{
+  width: 100vw;
+  max-height: 100vh;
+  
+}
+
 // Medium screens
 @media only screen and (min-width: $medium-screen-min-width) and (max-width: $medium-screen-max-width) {
   footer {
