@@ -18,6 +18,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import CaseStudies from './pages/CaseStudies';
 import Listings from './pages/Listings';
+import HeaderPreviews from './components/HeaderPreviews';
 function App() {
   const navigate = useNavigate();
 
@@ -31,6 +32,7 @@ function App() {
   return (
        <>
        <Header />
+       <HeaderPreviews/>
        <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/who-we-help' element={<WhoWeHelp />} />
@@ -46,7 +48,6 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/book-consultation' element={<FreeConsultation />} />
-
         <Route path='/listing' element={<Listings/>} />
         <Route path='/case-studies' element={<CaseStudies />} />
       </Routes>
