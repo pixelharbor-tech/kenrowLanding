@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
 
             <span>
-              &copy; Copyright Kenrow Digital Marketing Agency. All Rights
+              &copy; Copyright Kenrow. All Rights
               Reserved
             </span>
           </div>
