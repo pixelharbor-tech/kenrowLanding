@@ -34,10 +34,10 @@ const HeaderController = () => {
       "A Versatile Powerhouse for Web Design, SEO, Marketing, and More";
     Keyword = "Revolutionize Your Digital Presence with Speed and Precision";
     description =
-      "Digital Plus Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";
+      "Kenrow Digital Marketing Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";
     pageTitle = "Kenrow Agency";
     callToAction = "Get Started";
-    height = isSmallScreen ? "100vh" : "70vh";
+    height = isSmallScreen ? "60vh" : "80vh";
   } else if (pathname == "/who-we-help") {
     backgroundImage = WhoWeHelpImage;
     upDescription = null;

@@ -12,5 +12,113 @@
     width: 100%;
     height: 100%;
     background-color: rgba(121, 141, 252, 0.623);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      width: 50%;
+      font-weight: 900;
+      line-height: 45px;
+    }
+
+    p {
+      font-size: 1rem;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 20px;
+      width: 350px;
+      background-color:  $brand-color;
+      transition: background-color  0s linear 0s;
+      font-weight: 700;
+      font-size: 1.5em;
+
+      &:hover {
+        background-color: rgb(0, 33, 218);
+      }
+    }
+  }
+
+  // Mobile Devices
+  @media screen and (max-width: $small-screen-max-width) {
+    .overlay {
+      
+  
+      h3 {
+        margin: 0;
+        width: 90%;
+        font-size: 1em;
+      }
+  
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        width: 90%;
+      }
+  
+      p {
+        font-size: 1rem;
+        width: 90%;
+      }
+  
+      button {
+        font-size: 1em;
+        padding: 15px;
+        width: 250px;
+        background-color:  $brand-color;
+        transition: background-color  0s linear 0s;
+  
+        &:hover {
+          background-color: rgb(0, 33, 218);
+        }
+      }}
+  }
+
+  // Tablet
+  @media screen and (min-width: $medium-screen-min-width) and (max-width: $medium-screen-max-width) {
+    .overlay {
+      
+  
+      h3 {
+        margin: 0;
+        width: 90%;
+        font-size: 1em;
+      }
+  
+      h1 {
+        text-align: center;
+        font-size: 2.3em;
+        width: 80%;
+      }
+  
+      p {
+        font-size: 1rem;
+        width: 80%;
+      }
+  
+      button {
+        padding: 15px;
+        width: 350px;
+        background-color:  $brand-color;
+        transition: background-color  0s linear 0s;
+  
+        &:hover {
+          background-color: rgb(0, 33, 218);
+        }
+      }}
   }
 }

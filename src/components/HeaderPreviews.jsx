@@ -1,6 +1,7 @@
 import React from "react";
 import { pageTitleName } from "../utils/PageTitle";
-import "../style/headerPreview.scss"
+import "../style/headerPreview.scss";
+import { Link } from "react-router-dom";
 const HeaderPreviews = ({
   Keyword,
   backgroundImage,
@@ -10,19 +11,26 @@ const HeaderPreviews = ({
   pageTitle,
   height,
 }) => {
-    const pageName = pageTitleName(pageTitle)
+  const pageName = pageTitleName(pageTitle);
   return (
     <>
-    {pageName}
-      <div className="container header-preview" 
-       style={{
-        backgroundImage: `url(${backgroundImage})`,
-        height: height
-       }}
+      {pageName}
+      <div
+        className="container header-preview"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          height: height,
+        }}
       >
         <div className="overlay">
-            <h3>{upDescription}</h3>
-            <h1>{Keyword}</h1>
+          <h3>{upDescription}</h3>
+          <h1>{Keyword}</h1>
+          <p>{description}</p>
+          {callToAction && (
+            <Link to={"/contact"}>
+              <button>{callToAction}</button>
+            </Link>
+          )}
         </div>
       </div>
     </>

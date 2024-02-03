@@ -74,15 +74,11 @@ nav {
 
   // Mobile Devices
   @media screen and (max-width: $small-screen-max-width) {
-    
-    nav{
-      background: #000;
-    }
+     height: 9vh;
+    width: 100vw;
     .lower-nav {
-      // background-color: rebeccapurple;
       justify-content: space-between;
-      width: 100vw;
-      padding: 10px;
+      padding: 10px 20px;
       .left-down {
         display: none;
       }
@@ -95,14 +91,10 @@ nav {
 
   // Tablet
   @media screen and (min-width: $medium-screen-min-width) and (max-width: $medium-screen-max-width) {
-    // Adjust styles for medium-sized screens (e.g., tablets)
-    .upper-nav {
-      display: none;
-    }
-
+    height: 9vh;
+    width: 100vw;
     .lower-nav {
       justify-content: space-between;
-      width: 100vw;
       padding: 10px 30px;
       .left-down {
         display: none;
@@ -113,6 +105,4 @@ nav {
       }
     }
   }
-
-  // Your other media queries...
 }

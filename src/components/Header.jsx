@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import "../style/header.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useState } from "react";
-import { useMediaQuery, } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
-import Logo from "../assets/kenrow png 1_1.png"
+import Logo from "../assets/kenrow png 1_1.png";
 const Header = () => {
   const [openServices, setOpenServices] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +25,13 @@ const Header = () => {
       <div className="lower-nav">
         <div>
           <Link to="/">
-          <img style={{
-            width:  !isSmallScreen ? "7em" : "5em"
-          }}  src={Logo} alt="Kenrow Logo" />
+            <img
+              style={{
+                width: !isSmallScreen ? "7em" : "5em",
+              }}
+              src={Logo}
+              alt="Kenrow Logo"
+            />
           </Link>
         </div>
         {isSmallScreen && (
@@ -60,16 +64,13 @@ const Header = () => {
 
             {openServices && (
               <div className={`select ${openServices ? "open" : ""}`}>
-                <div 
+                <div
                   className="placeholder"
                   onClick={() => setOpenServices(false)}
                 >
-                  <Link to={"/seo"}>
-                    SEO
-                  </Link>
+                  <Link to={"/seo"}>SEO</Link>
                 </div>
 
-                
                 <div
                   className="placeholder"
                   onClick={() => setOpenServices(false)}
@@ -142,11 +143,10 @@ const Header = () => {
             padding: "20px",
           }}
         >
-          <img 
-
-          style={{
-            width: "30px"
-          }}
+          <img
+            style={{
+              width: "30px",
+            }}
             onClick={() => toggleMenu()}
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAm0lEQVR4nO2UQQ6DIBBFuURJvf9J6qYptZuy8DivIWWjEf2D2HThX5E4/z9gBp079XcCemAAvMHjgRdwU4oDX0UFksNTbdJDAVyAdzaMQGeovW4CVAi14QqEveFrEFqFF5oYZ2t50iwnabNzAdC1CveHXdFSQy3vxBzuyt9sEGUUqYVY5pwaCPC0NJHpEAQFcK/8XQ/Jq3pO/U4fS5Xnx68CVG0AAAAASUVORK5CYII="
           />
@@ -203,6 +203,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-/*    */
