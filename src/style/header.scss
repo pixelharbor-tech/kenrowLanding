@@ -1,102 +1,107 @@
 @import "../style/index.scss";
 
-nav {
-  margin-top: 20px;
-  .lower-nav {
-    height: 7vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $text-light;
-    padding: 10px 50px;
-    
 
-    div {
-      a {
+  nav {
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    height: 15vh;
+    background-color: #ffffff;
+    z-index: 100;
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    .lower-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $text-light;
+      padding: 10px 50px;
+  
+      div {
+        a {
+          cursor: pointer;
+        }
+      }
+  
+      .menu {
+        display: none;
+        width: 30px;
         cursor: pointer;
       }
-    }
-
-    .menu {
-      display: none;
-      width: 30px;
-      cursor: pointer;
-    }
-    .left-down {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      justify-content: center;
-
-      .relative {
-        position: relative;
-        font-size: 16px;
+      .left-down {
         display: flex;
+        align-items: center;
+        gap: 40px;
         justify-content: center;
-
-        &:hover {
-          opacity: 0.97;
-        }
-
-        .select {
-          div {
-            padding: 5px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 1;
-            transition: opacity 1s linear 0s;
-            font-size: 0.97em;
-
-            &:hover {
-              background-color: $brand-color;
-              color: #fff;
-              opacity: 0.71;
+  
+        .relative {
+          position: relative;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+  
+          &:hover {
+            opacity: 0.97;
+          }
+  
+          .select {
+            div {
+              padding: 5px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              cursor: pointer;
+              opacity: 1;
+              transition: opacity 1s linear 0s;
+              font-size: 0.97em;
+  
+              &:hover {
+                background-color: $brand-color;
+                color: #fff;
+                opacity: 0.71;
+              }
             }
           }
         }
       }
-    }
-  }
 
-
-
-  // Tab
-  @media screen and (min-width: $medium-screen-min-width) and (max-width: $medium-screen-max-width) {
-    .upper-nav {
-      display: none;
-    }
-    .lower-nav {
-      justify-content: space-between;
-      width: 100vw;
-      padding: 10px 30px;;
-      .left-down {
-        display: none;
-      }
-
-      .menu {
-        display: block;
-      }
-    }
-  }
   
-  @media screen and (max-width: $small-screen-max-width)
-  {
-    .upper-nav {
-      display: none;
-    }
-    .lower-nav {
-      justify-content: space-between;
-      width: 100vw;
-      padding: 10px;
-      .left-down {
+    // Tab
+    @media screen and (min-width: $medium-screen-min-width) and (max-width: $medium-screen-max-width) {
+      .upper-nav {
         display: none;
       }
-
-      .menu {
-        display: block;
+      .lower-nav {
+        justify-content: space-between;
+        width: 100vw;
+        padding: 10px 30px;
+        .left-down {
+          display: none;
+        }
+  
+        .menu {
+          display: block;
+        }
       }
     }
-}
+  
+    @media screen and (max-width: $small-screen-max-width) {
+      .upper-nav {
+        display: none;
+      }
+      .lower-nav {
+        justify-content: space-between;
+        width: 100vw;
+        padding: 10px;
+        .left-down {
+          display: none;
+        }
+  
+        .menu {
+          display: block;
+        }
+      }
+    }
   }
+}

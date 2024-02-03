@@ -10,6 +10,15 @@ $medium-screen-min-width: 768px;
 $medium-screen-max-width: 991px;
 
 // INDEX ELEMENT
+
+html{
+  height: 100%;
+}
+
+.container {
+  padding: 10px 50px;
+  width: 100vw;
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +31,7 @@ body {
   font-size: 1em;
   color: $text-light;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -59,11 +69,11 @@ button {
   display: none;
   transition: max-height 0.3s ease-in-out;
   overflow: hidden;
-  background-color: #fff;
   width: 150px;
 }
 
 .select.open {
+  background-color: #ffffff;
   max-height: 350px;
   margin-top: 25px;
   position: absolute;
@@ -76,74 +86,72 @@ button {
   transition: 1s cubic-bezier(0.65, 0, 0.35, 1) 0s;
 }
 
-
 img {
   width: 100%;
   object-fit: cover;
 }
 
-input{
+input {
   padding: 20px;
   border: none;
-  font-size:  0.9em;
+  font-size: 0.9em;
   width: 70%;
   margin-bottom: 10px;
   border-radius: 10px;
 
-  &:focus{
+  &:focus {
     border: none;
     outline: none;
   }
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   background-color: $dark-blue;
-  padding: 30px 120px;
+  padding: 10px 50px;
   display: flex;
   align-items: center;
   img {
     width: 7em;
   }
 
-  .business-info{
+  
+
+  .business-info {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 10px;
 
-
-    .left{
+    .left {
       display: flex;
       flex-direction: column;
       gap: 20px;
       width: 35%;
 
-      div{
+      div {
         display: fle0x;
         gap: 20px;
         flex-direction: column;
-        p{
+        p {
           width: 90%;
           margin-bottom: 10px;
         }
-        span{
-         font-size: 14px;
+        span {
+          font-size: 14px;
         }
       }
     }
 
-    .middle{
+    .middle {
       width: 20%;
-      h1{
+      h1 {
         margin-bottom: 10px;
         font-size: 1.5em;
       }
 
-      div{
+      div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -151,22 +159,15 @@ footer {
       }
     }
 
-    .right{
-
+    .right {
       width: 10%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      h1{
+      h1 {
         font-size: 1.5em;
-
-       
       }
-
-      
     }
-    
-    
   }
 }
 
@@ -175,60 +176,56 @@ footer {
   footer {
     align-items: center;
     height: 40vh;
-   flex-wrap: wrap;
-   padding: 10px;
-   justify-content: center;
-   img {
-     width: 5em;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    img {
+      width: 5em;
     }
-    
-    .business-info{
+
+    .business-info {
       margin-bottom: 20px;
       display: flex;
       gap: 20px;
       align-items: flex-start;
 
-      .left{
+      .left {
         display: flex;
         flex-direction: column;
         gap: 10px;
         width: 50%;
-  
-        div{
+
+        div {
           display: fle0x;
           gap: 10px;
           flex-direction: column;
-          p{
+          p {
             width: 100%;
             margin-bottom: 10px;
             font-size: 13px;
           }
-          span{
-           font-size: 12px;
+          span {
+            font-size: 12px;
           }
         }
       }
-  
-      .middle{
+
+      .middle {
         width: 50%;
-        h1{
+        h1 {
           margin-bottom: 10px;
           font-size: 1em;
         }
-  
-        div{
+
+        div {
           font-size: 13px;
           gap: 10px;
         }
       }
-  
-      .right{
+
+      .right {
         display: none;
-  
-        
       }
-      
-      
     }
   }
 }
@@ -242,61 +239,55 @@ footer {
     img {
       width: 6em;
     }
-  
-    .business-info{
+
+    .business-info {
       display: flex;
       gap: 10px;
 
-      .left{
+      .left {
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 30%;
-  
-        div{
+
+        div {
           display: fle0x;
           gap: 20px;
           flex-direction: column;
-          p{
+          p {
             width: 100%;
             margin-bottom: 10px;
           }
-          span{
-           font-size: 14px;
+          span {
+            font-size: 14px;
           }
         }
       }
-  
-      .middle{
+
+      .middle {
         width: 30%;
-        h1{
+        h1 {
           margin-bottom: 10px;
           font-size: 1.3em;
         }
-  
-        div{
+
+        div {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           gap: 10px;
         }
       }
-  
-      .right{
+
+      .right {
         width: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1{
+        h1 {
           font-size: 1.3em;
-  
-         
         }
-  
-        
       }
-      
-      
     }
   }
 }

@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 import CaseStudies from './pages/CaseStudies';
 import Listings from './pages/Listings';
 import HeaderPreviews from './components/HeaderPreviews';
+import HeaderController from './controllers/Header';
 function App() {
   const navigate = useNavigate();
 
@@ -32,7 +33,7 @@ function App() {
   return (
        <>
        <Header />
-       <HeaderPreviews/>
+       <HeaderController/>
        <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/who-we-help' element={<WhoWeHelp />} />
@@ -41,7 +42,7 @@ function App() {
         <Route path='/facebook-ads' element={<FacebookAds />} />
         <Route path='/content' element={<Content />} />
         <Route path='/email-marketing' element={<EmailMarketing />} />
-        <Route path='/social-posting' element={<SocialPosting />} />
+        <Route path='/social-management' element={<SocialPosting />} />
         <Route path='/website' element={<Website />} />
         <Route path='/social-media-ads' element={<SocialMediaAds />} />
         <Route path='/about' element={<About />} />
