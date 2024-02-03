@@ -64,7 +64,9 @@ const Header = () => {
                   className="placeholder"
                   onClick={() => setOpenServices(false)}
                 >
-                  <Link to={"/seo"}>SEO</Link>
+                  <Link to={"/seo"}>
+                    SEO
+                  </Link>
                 </div>
 
                 
@@ -89,7 +91,7 @@ const Header = () => {
                   className="placeholder"
                   onClick={() => setOpenServices(false)}
                 >
-                  <Link to="/social-posting">Social Posting</Link>
+                  <Link to="/social-management">Social Posting</Link>
                 </div>
                 <div onClick={() => setOpenServices(false)}>
                   <Link to={"/content"}>Content</Link>

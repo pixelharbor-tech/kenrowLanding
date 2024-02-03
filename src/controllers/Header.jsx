@@ -2,6 +2,20 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import HeaderPreviews from "../components/HeaderPreviews";
 import { useMediaQuery } from "@mui/material";
+import HomeImage from "../assets/home_2.jpg";
+import WhoWeHelpImage from "../assets/who-we-help.jpg";
+import SEOImage from "../assets/seo-bg.jpg";
+import GoogleAdsImage from "../assets/google-ads_bg.jpg";
+import FacebookAds from "../assets/facebook-ads_bg.jpg";
+import ContentImage from "../assets/content-bg.jpg";
+import EmailMarketing from "../assets/email-marketing.jpg"
+import SocialManagementImage from "../assets/social-management.jpg";
+import AboutImage from "../assets/about-bg.jpg";
+import WebsiteImage from "../assets/website-bg.jpg";
+import SocialMediaAds from "../assets/social-ads.jpg";
+import ListingImage from "../assets/Listing_bg.jpg";
+import CaseStudies from "../assets/case-studies.jpg";
+import BlogImage from "../assets/blog.jpg";
 const HeaderController = () => {
   const { pathname } = useLocation();
   const isSmallScreen = useMediaQuery("(max-width: 991px)");
@@ -15,7 +29,7 @@ const HeaderController = () => {
   let height;
 
   if (pathname === "/") {
-    backgroundImage = "../assets/Home-Header-background.jpg";
+    backgroundImage = HomeImage;
     upDescription =
       "A Versatile Powerhouse for Web Design, SEO, Marketing, and More";
     Keyword = "Revolutionize Your Digital Presence with Speed and Precision";
@@ -25,7 +39,7 @@ const HeaderController = () => {
     callToAction = "Get Started";
     height = isSmallScreen ? "100vh" : "70vh";
   } else if (pathname == "/who-we-help") {
-    backgroundImage = "../assets/who-we-help.jpg";
+    backgroundImage = WhoWeHelpImage;
     upDescription = null;
     Keyword = "Who We Help";
     description =
@@ -34,15 +48,16 @@ const HeaderController = () => {
     pageTitle = "Who we Help";
     height = "50vh";
   } else if (pathname == "/seo") {
-    backgroundImage = "../assets/seo.jpg";
+    backgroundImage = SEOImage;
     upDescription = null;
     Keyword = "SEO";
     description =
       "Search engine optimization serves to help your website rank organically through on-page and backend website optimizations.";
     callToAction = null;
     pageTitle = "SEO";
+    height = "50vh"
   } else if (pathname == "/google-ads") {
-    backgroundImage = "../assets/google-ads_bg.jpg";
+    backgroundImage = GoogleAdsImage;
     upDescription = null;
     Keyword = "Google Ads";
     height = "50vh";
@@ -50,8 +65,9 @@ const HeaderController = () => {
       "Skip the line and start getting eyes on your business immediately. Take advantage of Google's powerful advertising tools today!";
     callToAction = null;
     pageTitle = "Google Ads";
+
   } else if (pathname == "/facebook-ads") {
-    backgroundImage = "../assets/facebook-ads_bg.jpg";
+    backgroundImage = FacebookAds;
     upDescription = null;
     Keyword = "Facebook Ads";
     description =
@@ -60,7 +76,7 @@ const HeaderController = () => {
     pageTitle = "Facebook Ads";
     height = "50vh";
   } else if (pathname == "/content") {
-    backgroundImage = "../assets/content-bg.jpg";
+    backgroundImage = ContentImage;
     upDescription = null;
     Keyword = "Content";
     description =
@@ -69,7 +85,7 @@ const HeaderController = () => {
     pageTitle = "Content";
     height = "50vh";
   } else if (pathname == "/email-marketing") {
-    backgroundImage = "../assets/email-marketing.jpg";
+    backgroundImage = EmailMarketing ;
     upDescription = null;
     Keyword = "Email Marketing";
     description =
@@ -78,15 +94,16 @@ const HeaderController = () => {
     pageTitle = "Email Marketing";
     height = "50vh";
   } else if (pathname == "/social-management") {
-    backgroundImage = "../assets/social-management.jpg";
+    backgroundImage = SocialManagementImage;
     upDescription = null;
     Keyword = "Social Management";
     description =
       "Establish a rapport with your customers by entering the online conversation.";
     callToAction = null;
     pageTitle = "Social Management";
+    height = "50vh";
   } else if (pathname == "/social-media-ads") {
-    backgroundImage = "../assets/social-ads.jpg";
+    backgroundImage = SocialMediaAds;
     upDescription = null;
     Keyword = "Social Ads";
     description =
@@ -95,7 +112,7 @@ const HeaderController = () => {
     pageTitle = "Social Ads";
     height = "50vh";
   } else if (pathname == "/website") {
-    backgroundImage = "../assets/website-bg.jpg";
+    backgroundImage = WebsiteImage;
     upDescription = null;
     Keyword = "Websites";
     description =
@@ -104,7 +121,7 @@ const HeaderController = () => {
     pageTitle = "Website";
     height = "50vh";
   } else if (pathname == "/about") {
-    backgroundImage = "../assets/about-bg.jpg";
+    backgroundImage = AboutImage;
     upDescription = null;
     Keyword = "About";
     description =
@@ -113,7 +130,7 @@ const HeaderController = () => {
     pageTitle = "about";
     height = "50vh";
   } else if (pathname == "/blog") {
-    backgroundImage = "../assets/blog.jpg";
+    backgroundImage = BlogImage;
     upDescription = null;
     Keyword = "Blog";
     description =
@@ -122,7 +139,7 @@ const HeaderController = () => {
     pageTitle = "blog";
     height = "50vh";
   } else if (pathname == "/case-studies") {
-    backgroundImage = "../assets/case-studies.jpg";
+    backgroundImage = CaseStudies;
     upDescription = null;
     Keyword = "Case Studies";
     description =
@@ -133,16 +150,27 @@ const HeaderController = () => {
   } else if (pathname == "/contact") {
     backgroundImage = "../assets/case-studies.jpg";
     upDescription = null;
-    Keyword = "Case Studies";
+    Keyword = "Contact Us";
     description =
       "Take a deep-dive into the studies and analytics we have regarding our previous experiences with our digital marketing campaigns.";
     callToAction = null;
     pageTitle = "Contact";
     height = "50vh";
   }
+  else if (pathname == "/listing") {
+    backgroundImage = ListingImage;
+    upDescription = null;
+    Keyword = "Listings";
+    description =
+      "Help your customers find your business with optimized directory listings everywhere you're located online.";
+    callToAction = null;
+    pageTitle = "Listing";
+    height = "50vh";
+  }
+
   return (
     <HeaderPreviews
-    Keyword={Keyword}
+      Keyword={Keyword}
       backgroundImage={backgroundImage}
       upDescription={upDescription}
       description={description}

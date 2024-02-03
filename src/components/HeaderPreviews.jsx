@@ -1,8 +1,8 @@
 import React from "react";
 import { pageTitleName } from "../utils/PageTitle";
 import "../style/headerPreview.scss"
-import  Home from "../assets/who-we-help.jpg"
 const HeaderPreviews = ({
+  Keyword,
   backgroundImage,
   upDescription,
   description,
@@ -10,19 +10,19 @@ const HeaderPreviews = ({
   pageTitle,
   height,
 }) => {
-
     const pageName = pageTitleName(pageTitle)
   return (
     <>
     {pageName}
       <div className="container header-preview" 
        style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/who-we-help.jpg)`,
-        height: "100vh"
+        backgroundImage: `url(${backgroundImage})`,
+        height: height
        }}
       >
         <div className="overlay">
-            
+            <h3>{upDescription}</h3>
+            <h1>{Keyword}</h1>
         </div>
       </div>
     </>
