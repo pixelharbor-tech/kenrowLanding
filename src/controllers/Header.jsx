@@ -167,6 +167,17 @@ const HeaderController = () => {
     pageTitle = "Listing";
     height = "50vh";
   }
+  else if (pathname == "/social-posting") {
+    backgroundImage = SocialManagementImage;
+    upDescription = null;
+    Keyword = "Social Posting";
+    description =
+      "Establish a rapport with your customers by entering the online conversation.";
+    callToAction = null;
+    pageTitle = "Social Management";
+    height = "50vh";
+
+  }
 
   return (
     <HeaderPreviews
