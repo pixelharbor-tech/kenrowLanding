@@ -31,7 +31,7 @@ const HeaderController = () => {
   if (pathname === "/") {
     backgroundImage = HomeImage;
     upDescription =
-      "A Versatile Powerhouse for Web Design, SEO, Marketing, and More";
+      null;
     Keyword = "Revolutionize Your Digital Presence with Speed and Precision";
     description =
       "Kenrow Digital Marketing Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";
